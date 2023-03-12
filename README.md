@@ -145,3 +145,71 @@
 
   ```
 </details>
+
+3.
+
+<img width="500" src="https://user-images.githubusercontent.com/96529477/224521318-1dbf8223-0730-44b4-9f77-dbc6a9290055.png">
+
+<details>
+
+  <summary>html, css</summary>
+  
+  ```html
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body {
+        padding: 30px;
+      }
+      .grid {
+        display: grid;
+        margin: 10px;
+        grid-gap: 1rem;
+        grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+      }
+      .grid div{
+        background-color: skyblue;
+        padding: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .item-1 {
+        grid-column: 1 / 4;
+      }
+      .item-2 {
+        grid-column: 4 / 5;
+        grid-row: 1 / 4;
+      }
+      .item-3 {
+        grid-column: 2 / 4;
+        grid-row: 2 / 4;
+      }
+      .item-4 {
+        grid-column: 1 / 2;
+        grid-row: 2 / 5;
+      }
+      .item-5 {
+        grid-column: 2 / 5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid">
+      <div class="item-1">1</div>
+      <div class="item-2">2</div>
+      <div class="item-3">3</div>
+      <div class="item-4">4</div>
+      <div class="item-5">5</div>
+
+    </div>
+  </body>
+  </html>
+
+  ```
+</details>
