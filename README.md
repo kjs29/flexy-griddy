@@ -215,3 +215,45 @@
 </details>
 
 4.
+![flex1](https://user-images.githubusercontent.com/96529477/225455230-88e965aa-9cf4-4a52-b044-b96265f82cbc.gif)
+
+
+<details>
+
+  <summary>answer</summary>
+
+  ```html
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <style>
+      .flex {
+        display: flex;
+        text-align: center;
+        gap: 10px;
+      }
+      .flex div {
+        background-color: skyblue;
+        padding: 10px;
+      }
+      .first {
+        flex: 0 0 100px;
+      }
+      .second {
+        flex: 1 1 auto;
+      }
+      .third {
+        flex: 0 0 100px;
+      }
+      </style>
+    </head>
+  <body>
+    <div class="flex">
+      <div class="first">1</div>
+      <div class="second">2</div>
+      <div class="third">3</div>
+    </div>
+  </body>
+  </html>
+  ```
+</details>
